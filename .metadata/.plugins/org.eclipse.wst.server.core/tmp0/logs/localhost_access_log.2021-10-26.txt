@@ -325,3 +325,11 @@
 0:0:0:0:0:0:0:1 - - [26/Oct/2021:10:49:33 +0530] "POST /phase3-Project-SportyShoes-Webappplication/ulogin HTTP/1.1" 200 419
 0:0:0:0:0:0:0:1 - - [26/Oct/2021:10:49:42 +0530] "GET /phase3-Project-SportyShoes-Webappplication/logout HTTP/1.1" 200 253
 0:0:0:0:0:0:0:1 - - [26/Oct/2021:10:50:39 +0530] "GET /phase3-Project-SportyShoes-Webappplication/logout HTTP/1.1" 200 253
+127.0.0.1 - - [26/Oct/2021:11:05:54 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [26/Oct/2021:11:05:56 +0530] "GET /phase3-Project-SportyShoes-Webappplication/ HTTP/1.1" 200 209
+0:0:0:0:0:0:0:1 - - [26/Oct/2021:11:05:57 +0530] "GET /phase3-Project-SportyShoes-Webappplication/login HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [26/Oct/2021:11:05:57 +0530] "GET /phase3-Project-SportyShoes-Webappplication/login.jsp HTTP/1.1" 200 502
+0:0:0:0:0:0:0:1 - - [26/Oct/2021:11:06:19 +0530] "POST /phase3-Project-SportyShoes-Webappplication/login HTTP/1.1" 200 677
+0:0:0:0:0:0:0:1 - - [26/Oct/2021:11:06:25 +0530] "GET /phase3-Project-SportyShoes-Webappplication/list-products HTTP/1.1" 200 1047
+0:0:0:0:0:0:0:1 - - [26/Oct/2021:11:06:25 +0530] "GET /phase3-Project-SportyShoes-Webappplication/list-products HTTP/1.1" 200 1047
+0:0:0:0:0:0:0:1 - - [26/Oct/2021:11:06:43 +0530] "GET /phase3-Project-SportyShoes-Webappplication/add-product HTTP/1.1" 200 1306
