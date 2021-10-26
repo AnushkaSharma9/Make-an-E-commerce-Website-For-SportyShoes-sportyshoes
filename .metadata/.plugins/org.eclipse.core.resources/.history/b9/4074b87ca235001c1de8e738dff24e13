@@ -1,0 +1,11 @@
+<html>
+<body>
+	<h2>Spring JDBC Template Operations</h2>
+	<a href="login"> LOGIN ADMIN </a> ||
+	<a href="login"> LOGIN USER </a>  ||
+
+
+	
+	<br><br><br>
+</body>
+</html>

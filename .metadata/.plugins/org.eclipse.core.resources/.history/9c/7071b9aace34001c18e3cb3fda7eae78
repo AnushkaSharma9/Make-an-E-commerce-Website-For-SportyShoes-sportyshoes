@@ -1,0 +1,46 @@
+package com.anushka.SportyShoesWebapplication.service;
+
+	import java.util.ArrayList;
+	import java.util.List;
+
+	import org.springframework.beans.factory.annotation.Autowired;
+
+import com.anushka.SportyShoesWebapplication.dao.UserDAO;
+import com.anushka.SportyShoesWebapplication.entity.Login;
+import com.anushka.SportyShoesWebapplication.entity.User;
+
+	
+	public class UserServiceImpl implements UserService {
+
+	 
+	  public UserDAO userDao;
+
+	  public int register(User user) {
+	    return userDao.register(user);
+	  }
+
+	  public User validateUser(Login login) {
+	    return userDao.validateUser(login);
+	  }
+
+
+	public List<User> getAllUsers() {
+
+	List<User> userList = new ArrayList<User>();
+	User user1;
+	  for(User user2 : userDao.getAllUsers()) {
+	    user1 = new User();
+	  user1.setPhone(user2.getPhone());
+	  user1.setAddress(user2.getAddress());
+	  user1.setEmail(user2.getEmail());
+	  user1.setFirstname(user2.getFirstname());
+	  user1.setLastname(user2.getLastname());
+	  user1.setUsername(user2.getUsername());
+	  userList.add(user1);
+	  }
+	 
+	return (List<User>) userList;
+	}
+
+
+}

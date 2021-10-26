@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.anushka.SportyShoesWebapplication.entity.EProduct"/>
+    <fullyQualifiedTypeName name="com.anushka.SportyShoesWebapplication.dao.EproductDAO"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+    <fullyQualifiedTypeName name="com.anushka.SportyShoesWebapplication.entity.Admin"/>
+    <fullyQualifiedTypeName name="com.anushka.SportyShoesWebapplication.service.UserServiceImpl"/>
+    <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
+    <fullyQualifiedTypeName name="org.springframework.validation.BindingResult"/>
+    <fullyQualifiedTypeName name="org.springframework.validation.ObjectError"/>
+    <fullyQualifiedTypeName name="org.springframework.jdbc.core.JdbcTemplate"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="javax.sql.DataSource"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.anushka.SportyShoesWebapplication.service.UserService"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+    <fullyQualifiedTypeName name="com.anushka.SportyShoesWebapplication.entity.Login"/>
+    <fullyQualifiedTypeName name="com.anushka.SportyShoesWebapplication.dao.UserDAO"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="com.anushka.SportyShoesWebapplication.entity.User"/>
+    <fullyQualifiedTypeName name="com.anushka.SportyShoesWebapplication.dao.LoginDAO"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,5 @@
+package com.anushka.SportyShoesWebapplication.entity;
+
+public class User {
+
+}

@@ -1,0 +1,32 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login Page</title>
+</head>
+<body>
+<div align="center" style="border: 2px solid green;padding :10px;" >
+		<h1>Login Admin</h1>
+		<form:form action="login" method="post" modelAttribute="admin"  >
+			<table border="0">
+				<tr>
+					<td>Admin User Name:</td>
+					<td><form:input path="userName" /></td>
+				</tr>
+
+				<tr>
+					<td>Admin Password:</td>
+					<td><form:input path="Password" /></td>
+				</tr>
+
+				<tr>
+					<td>Submit</td>
+					<td><input type="submit" value="Login" /></td>
+				</tr>
+			</table>
+		</form:form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+package com.anushka.SportyShoesWebapplication.service;
+
+import com.anushka.SportyShoesWebapplication.entity.UserLogin;
+import com.anushka.SportyShoesWebapplication.entity.User;
+
+public interface UserService {
+
+	User validateUser(UserLogin login);
+	}
+

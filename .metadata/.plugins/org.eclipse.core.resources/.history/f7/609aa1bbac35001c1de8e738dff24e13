@@ -1,0 +1,23 @@
+package com.anushka.SportyShoesWebapplication.dao;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+import com.anushka.SportyShoesWebapplication.entity.User;
+
+public class LoginDAO {
+	
+		JdbcTemplate template;
+
+		public JdbcTemplate getTemplate() {
+			return template;
+		}
+
+		public void setTemplate(JdbcTemplate template) {
+			this.template = template;
+		}
+		// add products
+				public int loginuser(User user) {
+					String query = "select * from euser where username=? , password = ?";
+					return template.update(query);
+				}
+}

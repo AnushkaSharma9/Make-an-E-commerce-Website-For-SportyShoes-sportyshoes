@@ -1,0 +1,43 @@
+package com.anushka.SportyShoesWebapplication.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.anushka.SportyShoesWebapplication.dao.UserDAO;
+import com.anushka.SportyShoesWebapplication.entity.User;
+
+@Controller
+public class UserController {
+	
+	
+		
+		@Autowired
+		UserDAO userDAO;
+		
+		@RequestMapping(value="/list-users", method=RequestMethod.GET)
+		public String listAllUsers(ModelMap map) {
+			List<User> list = userDAO.getUsers();
+			map.addAttribute("list",list);
+			return "list-users";
+		}
+		
+		@RequestMapping(value="/add-user", method=RequestMethod.GET)
+		public String addUser(ModelMap map) {
+			User user = new User();
+			map.addAttribute("user",user);
+			return "add-user";
+		}
+		
+		@RequestMapping(value="/add-user", method=RequestMethod.POST)
+		public String saveProduct(ModelMap map, @ModelAttribute("user") User user) {
+			userDAO.addUser(user);
+			return "success";
+		}
+
+}

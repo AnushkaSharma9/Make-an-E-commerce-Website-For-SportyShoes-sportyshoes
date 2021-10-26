@@ -1,0 +1,14 @@
+package com.anushka.SportyShoesWebapplication.entity;
+
+import java.util.Date;
+
+public class Admin {
+	// properties
+		private long id;
+		private String username;
+		private String password;
+		
+		
+		
+
+}

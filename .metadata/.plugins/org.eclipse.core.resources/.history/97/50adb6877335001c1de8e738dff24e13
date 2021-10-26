@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+  <jsp:include page="index.jsp"></jsp:include>
+
+	<div align="center" style="border: 2px solid green;padding :10px;" >
+		<h1>Add Product</h1>
+		<form:form action=delete-product" method="post" modelAttribute="eProduct" >
+			<table border="0">  
+				<tr>
+					<td>Product ID:</td>
+					<td><form:input path="id" /></td>
+				</tr>
+
+				<tr>
+					<td>Delete</td>
+					<td><input type="submit" value="Delete Product" /></td>
+				</tr>
+				</table>
+				</form:form></div>
+</body>
+</html>

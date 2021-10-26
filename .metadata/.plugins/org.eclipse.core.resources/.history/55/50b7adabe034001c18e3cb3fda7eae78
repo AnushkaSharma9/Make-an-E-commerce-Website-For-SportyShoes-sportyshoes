@@ -1,0 +1,24 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<jsp:include page="index.jsp"></jsp:include>
+	<h1> Update Product</h1>
+	<form action="update-student" method="post">
+	<fieldset>
+		Product Id : <input name="id" id="id" type="text" > <br><br>
+		Product Name : <input name="name" id="name" type="text" > <br><br>
+		Product Price : <input name="price" id="price" type="text" > <br><br>
+		<input type="submit" value="Update Product"> <br>
+	</fieldset>
+	</form>
+</body>
+</html>
+
+</body>
+</html>

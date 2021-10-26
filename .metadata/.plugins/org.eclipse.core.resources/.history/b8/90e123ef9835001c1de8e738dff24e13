@@ -1,0 +1,8 @@
+package com.anushka.SportyShoesWebapplication.service;
+
+import com.anushka.SportyShoesWebapplication.entity.User;
+
+public interface UserService {
+		public abstract boolean authenticateUser(User userBean);
+	}
+

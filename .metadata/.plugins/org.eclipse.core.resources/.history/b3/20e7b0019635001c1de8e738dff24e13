@@ -1,0 +1,52 @@
+package com.anushka.SportyShoesWebapplication.controller;
+
+	import javax.servlet.http.HttpServletRequest;
+	import javax.servlet.http.HttpServletResponse;
+
+	import org.springframework.beans.factory.annotation.Autowired;
+	import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.ObjectError;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.ModelAttribute;
+	import org.springframework.web.bind.annotation.RequestMapping;
+	import org.springframework.web.bind.annotation.RequestMethod;
+	import org.springframework.web.servlet.ModelAndView;
+
+import com.anushka.SportyShoesWebapplication.entity.User;
+import com.anushka.SportyShoesWebapplication.service.UserServiceImpl;
+
+	@Controller
+	public class LoginController {
+			
+			@Autowired
+			private UserServiceImpl useriService;
+		 
+			@RequestMapping("toLogin")
+			public String toLogin(Model model) {
+				// Make sure to add model of UserBean in which login 
+				// userName and password will be stored from the login form 
+				model.addAttribute("userBean", new User());
+				// "login" will be resolved to login.jsp
+				// where login-form is presented to user
+				return "login";
+			}
+		 
+			@RequestMapping("doLogin")
+			public ModelAndView doLogin(@ModelAttribute @Validated User userBean,BindingResult result) {
+				ModelAndView mview = new ModelAndView("login");
+				// If input bean does not have any validation error then proceed
+				if(!result.hasFieldErrors()) {
+					// If not a valid user then add error
+					// else proceed to user welcome page
+					if(!useriService.authenticateUser(userBean)) {
+						result.addError(new ObjectError("err", "Invalid Credentials"));
+					} else {
+						mview.setViewName("welcome");
+					}
+				}
+				return mview;
+			}
+		}
+	}

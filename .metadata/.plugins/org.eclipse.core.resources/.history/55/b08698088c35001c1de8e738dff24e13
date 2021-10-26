@@ -1,0 +1,44 @@
+package com.anushka.SportyShoesWebapplication.entity;
+
+
+
+public class Admin {
+	// properties
+		private long id;
+		private String userName;
+		private String Password;
+		public Admin(long id, String userName, String Password) {
+			super();
+			this.id = id;
+			this.userName = userName;
+			this.Password = Password;
+		}
+		public Admin() {
+			super();
+		}
+		public long getId() {
+			return id;
+		}
+		public void setId(long id) {
+			this.id = id;
+		}
+		public String getUsername() {
+			return userName;
+		}
+		public void setUsername(String userName) {
+			this.userName = userName;
+		}
+		public String getPassword() {
+			return Password;
+		}
+		public void setPassword(String Password) {
+			this.Password = Password;
+		}
+		@Override
+		public String toString() {
+			return "Admin [id=" + id + ", userName=" + userName + ", Password=" + Password + "]";
+		}
+		
+		
+
+}

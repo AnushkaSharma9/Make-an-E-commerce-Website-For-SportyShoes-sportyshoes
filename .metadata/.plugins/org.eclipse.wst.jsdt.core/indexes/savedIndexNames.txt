@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+D:\Make An E-commerce Website-SportyShoes\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3711470124.index
+2022750785.index
+2003415709.index
+491454889.index
+2322656658.index
+1208311397.index
+1306030586.index

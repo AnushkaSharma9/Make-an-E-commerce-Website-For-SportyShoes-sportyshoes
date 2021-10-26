@@ -1,0 +1,17 @@
+package com.anushka.SportyShoesWebapplication.dao;
+
+	import java.util.List;
+
+import com.anushka.SportyShoesWebapplication.entity.Login;
+import com.anushka.SportyShoesWebapplication.entity.User;
+
+
+	public interface UserDAO {
+
+	  int register(User user);
+
+	  User validateUser(Login login);
+	 
+	  List<User> getAllUsers();
+	}
+

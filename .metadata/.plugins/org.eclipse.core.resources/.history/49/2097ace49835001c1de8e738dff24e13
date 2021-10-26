@@ -1,0 +1,16 @@
+package com.anushka.SportyShoesWebapplication.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.anushka.SportyShoesWebapplication.entity.User;
+
+public class UserServiceImpl implements UserService {
+		 
+		@Autowired
+		private UserService userDAO;
+	 
+		public boolean authenticateUser(User userBean){
+			return userDAO.authenticateUser(userBean);
+		}
+	}
+

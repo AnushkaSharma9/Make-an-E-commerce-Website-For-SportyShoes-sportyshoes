@@ -1,0 +1,10 @@
+create database ecomwebapp_sportyshoes_webapp;
+
+use ecomwebapp_sportyshoes_webapp;
+
+create table eproduct( id int(11) NOT NULL AUTO_INCREMENT, name varchar(100) ,price decimal(10,2),dateAdded timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP, primary key(`id`) );
+
+insert into euser(id,username,password,role) values (1,'Anushka','@nushka123','customer');
+insert into euser(id,username,password,role) values (2,'Anu','@nu123','customer');
+insert into euser(id,username,password,role) values (3,'Nancy','n@ncy123','customer');
+insert into euser(id,username,password,role) values (4,'Rishika','rishi','customer');
